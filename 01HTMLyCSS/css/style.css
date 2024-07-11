@@ -1,0 +1,34 @@
+/*Colores bonitos por etiqueta*/
+body {
+    margin: 0;
+    height: 100vh;  /* Asegura que el gradiente cubra toda la pantalla */
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+p {
+    font-size: 30px;
+    color: rgb(0, 85, 110);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Por clase (ejemplo)
+.t1 {
+    font-size: 30px;
+    color: rgb(13, 78, 7);
+    font-weight: bold;
+}
+
+.t2 {
+    font-size: 40px;
+    color: rgb(60, 73, 3);
+    font-weight: 900;
+}*/
+
+h1,h2 {
+    color: rgb(66, 24, 105);
+}
+
