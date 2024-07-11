@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <!DOCTYPE html> Define el tipo de documento como HTML5; define el tipo de documento y asegura que el navegador renderice la página en modo estándar.
+<html lang="en"> Elemento raíz del documento, lang="en" establece el idioma del documento como inglés, esto es útil para la accesibilidad y para los motores de búsqueda.-->
 <head>
+<!-- Contiene metadatos y enlaces a recursos -->
     <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres del documento como UTF-8 que soporta casi todos los caracteres de escritura -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el viewport para que se adapte al ancho del dispositivo, y escala el contenido para que se vea bien en diferentes tamaños de pantalla como dispositivos móviles -->
     <meta name="author" content="Antloz">
+    <!-- Proporciona el nombre del autor del documento -->
     <meta name="description" content="A personal portfolio for Graphic Design (videos, pics, etc), Web design & Digital Marketing">
+    <!-- Proporciona una descripción del contenido del documento, útil para SEO -->
     <meta name="keywords" content="html, css, graphic design, video edition, marketing, México">
+    <!-- Proporciona palabras clave relacionadas con el contenido del documento, también útil para SEO -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlace a una hoja de estilos externa de Font Awesome para íconos -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace a una hoja de estilos CSS local -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Optimizan las conexiones a Google Fonts para mejorar el rendimiento -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimiza la conexión a fonts.gstatic.com -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <title>Portafolio Web</title>
+    <!-- Enlace a una fuente de Google Fonts -->
+    <title>My Web portfolio</title>
+    <!-- Título del documento que se muestra en la pestaña del navegador -->
 </head>
 <body>
+<!-- La etiqueta <body> contiene todo el contenido de la página web que se muestra al usuario. -->
     <nav>
+    <!-- La etiqueta <nav> se utiliza para definir un bloque de navegación, que agrupa los enlaces de navegación -->
         <div class="left">
+        <!-- Contenedor para los elementos de la navegación alineados a la izquierda -->
             <a href="/">Antloz</a>
+            <!-- Un enlace que redirige a la página principal (usualmente la raíz del sitio web) con el texto "Antloz" -->
         </div>
+
         <div class="right">
+        <!-- Contenedor para los elementos de la navegación alineados a la derecha -->
             <a href="https://github.com/efziro" target="_blank" rel="noreferrer">
+            <!-- Enlace (a la página de GitHub en este caso), abre en una nueva pestaña (target="_blank") y una medida de seguridad que evita que la nueva página sepa desde qué página fue abierta (rel=noreferrer) -->
                 <i class="fa-brands fa-github"></i>
+                <!-- Icono (de GitHub usando Font Awesome en este caso) -->
                 <p>GitHub</p>
+                <!-- Texto por parrafo (descriptivo para el enlace en este caso) -->
             </a>
             <a href="https://www.facebook.com/profile.php?id=61556398971490" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-facebook"></i>
                 <p>ABYX (FB Page)</p>
             </a>
             <a href="mailto:dittoconimposter@gmail.com">
+            <!-- Enlace pero para enviar un correo electrónico, se abre en la aplicación local de correo -->
                 <i class="fa-solid fa-envelope"></i>
                 <p>E-Mail</p>
             </a>
         </div>
     </nav>
     <main>
+    <!-- La etiqueta <main> define el contenido principal del documento. Recuerda, main esta dentro de body -->
         <section class="about-me">
+        <!-- La etiqueta <section> define una sección del documento -->
             <div class="description">
+            <!-- Este div agrupa la descripción personal -->
                 <h1>Hi, my name is Antonio</h1>
+                <!-- Un encabezado de nivel 1 (hay hasta el 6) -->
                 <p>I'm a Communication Sciences' bachelor I can do all kind of computer-related creative things, I'm most interested in video game things, and I really love to make customized things of all kinds.</p>
-                <p>(again, computer-realted stuff, I-I'm not that good with manual crafting 👉👈...)</p>
+                <p>(again, computer-related stuff, I-I'm not that good with manual crafting 👉👈...)</p>
                 <div class="links">
+                <!-- Este div contiene enlaces a diferentes secciones de la página -->
                     <a href="#habilidades">
+                    <!-- Un enlace a una sección -->
                         <i class="fa-solid fa-code"></i>
                         <p>Habilidades</p>
                     </a>
@@ -55,6 +85,7 @@
                 </div>
                 <div class="profile">
                     <img src="img/foto mia.jpg" alt="Foto de perfil">
+                    <!-- Imagen de perfil con la fuente especificada y texto alternativo -->
                 </div>
             </div>
         </section>
