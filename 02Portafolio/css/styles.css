@@ -3,4 +3,6 @@ body {
     padding: 0;
     box-sizing: content-box;
     background-color: rgb(4, 149, 185);
+    font-family: "Oswald", sans-serif;
+    color: rgb(34, 219, 74);
 }
