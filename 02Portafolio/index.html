@@ -4,6 +4,8 @@
 <html lang="en"> Elemento raíz del documento, lang="en" establece el idioma del documento como inglés, esto es útil para la accesibilidad y para los motores de búsqueda.-->
 <head>
 <!-- Contiene metadatos y enlaces a recursos -->
+    
+    <!-- Metadatos... ¿básicos? no se si lo son... pero son metadatos-->
     <meta charset="UTF-8">
     <!-- Establece la codificación de caracteres del documento como UTF-8 que soporta casi todos los caracteres de escritura -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +16,8 @@
     <!-- Proporciona una descripción del contenido del documento, útil para SEO -->
     <meta name="keywords" content="html, css, graphic design, video edition, marketing, México">
     <!-- Proporciona palabras clave relacionadas con el contenido del documento, también útil para SEO -->
+    
+    <!-- "links" a recursos varios -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Enlace a una hoja de estilos externa de Font Awesome para íconos -->
     <link rel="stylesheet" href="css/styles.css">
@@ -24,6 +28,7 @@
     <!-- Optimiza la conexión a fonts.gstatic.com -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- Enlace a una fuente de Google Fonts -->
+    
     <title>My Web portfolio</title>
     <!-- Título del documento que se muestra en la pestaña del navegador -->
 </head>
@@ -43,49 +48,85 @@
             <!-- Enlace (a la página de GitHub en este caso), abre en una nueva pestaña (target="_blank") y una medida de seguridad que evita que la nueva página sepa desde qué página fue abierta (rel=noreferrer) -->
                 <i class="fa-brands fa-github"></i>
                 <!-- Icono (de GitHub usando Font Awesome en este caso) -->
-                <p>GitHub</p>
-                <!-- Texto por parrafo (descriptivo para el enlace en este caso) -->
+                <span>GitHub</span>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61556398971490" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-facebook"></i>
-                <p>ABYX (FB Page)</p>
+                <span>ABYX (FB Page)</span>
             </a>
             <a href="mailto:dittoconimposter@gmail.com">
             <!-- Enlace pero para enviar un correo electrónico, se abre en la aplicación local de correo -->
                 <i class="fa-solid fa-envelope"></i>
-                <p>E-Mail</p>
+                <span>E-Mail</span>
             </a>
         </div>
     </nav>
+    
     <main>
     <!-- La etiqueta <main> define el contenido principal del documento. Recuerda, main esta dentro de body -->
         <section class="about-me">
         <!-- La etiqueta <section> define una sección del documento -->
-            <div class="description">
-            <!-- Este div agrupa la descripción personal -->
-                <h1>Hi, my name is Antonio</h1>
-                <!-- Un encabezado de nivel 1 (hay hasta el 6) -->
-                <p>I'm a Communication Sciences' bachelor I can do all kind of computer-related creative things, I'm most interested in video game things, and I really love to make customized things of all kinds.</p>
-                <p>(again, computer-related stuff, I-I'm not that good with manual crafting 👉👈...)</p>
-                <div class="links">
-                <!-- Este div contiene enlaces a diferentes secciones de la página -->
-                    <a href="#habilidades">
-                    <!-- Un enlace a una sección -->
-                        <i class="fa-solid fa-code"></i>
-                        <p>Habilidades</p>
-                    </a>
-                    <a href="#testimonio">
-                        <i class="fa-solid fa-pen"></i>
-                        <p>Testimonio</p>
-                    </a>
-                    <a href="#contacto">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>Contacto</p>
-                    </a>
+            <div class="text">
+                <div class="description">
+                <!-- Un div es un contenedor. Este div agrupa la descripción personal -->
+                    <h1>Hi, my name is Antonio</h1>
+                    <!-- Un encabezado de nivel 1 (hay hasta el 6) -->
+                    <span>I'm a Communication Sciences' bachelor I can do all kind of computer-related creative things, I'm most interested in video game things, and I really love to make customized things of all kinds.</span>
+                    <span>(again, computer-related stuff, I-I'm not that good with manual crafting 👉👈...)</span>
+                    
+                    <div class="links">
+                    <!-- Este div contiene enlaces a diferentes secciones de la página -->
+                        <a href="#habilidades">
+                        <!-- Un enlace a una sección -->
+                            <i class="fa-solid fa-code"></i>
+                            <span>Habilidades</span>
+                        </a>
+                        <a href="#testimonio">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>Testimonio</span>
+                        </a>
+                        <a href="#contacto">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </div>
+                    
                 </div>
-                <div class="profile">
-                    <img src="img/foto mia.jpg" alt="Foto de perfil">
-                    <!-- Imagen de perfil con la fuente especificada y texto alternativo -->
+            </div>
+            <div class="profile">
+                <img src="img/foto mia.jpg" alt="Foto de perfil">
+                <!-- Imagen de perfil con la fuente especificada y texto alternativo -->
+            </div>
+        </section>
+        <section class="habilidades" id="skills">
+            <h2>Habilidades 💻</h2>
+            <div class="text">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium vero, facere tempore veniam natus porro ipsa a ipsum omnis dolore nam eos, sed in recusandae quisquam alias qui iusto repellat.</span>
+            </div>
+            <div class="celdas">
+                <div class="celda">
+                    <img src="img/Adobe_Photoshop_CC_icon.svg.png" alt="Logo Photoshop">
+                    <span>Photoshop</span>
+                </div>
+
+                <div class="celda">
+                    <img src="img/coreldraw-x7-logo-747B0DC253-seeklogo.com.png" alt="Logo Illustrator">
+                    <span>Illustrator/Corel Draw</span>
+                </div>
+
+                <div class="celda">
+                    <img src="img/Adobe_After_Effects_CC_icon.svg.png" alt="Logo After Effects">
+                    <span>After Effects</span>
+                </div>
+
+                <div class="celda">
+                    <img src="img/html5_23329.png" alt="Logo HTML 5">
+                    <span>HTML</span>
+                </div>
+
+                <div class="celda">
+                    <img src="img/css.png" alt="Logo CSS">
+                    <span>CSS</span>
                 </div>
             </div>
         </section>
