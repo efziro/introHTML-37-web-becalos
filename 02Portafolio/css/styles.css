@@ -1,8 +1,18 @@
-body {
+* {
     margin: 0;
-    /* Elimina el margen por defecto del body */
     padding: 0;
-    /* Elimina el padding por defecto del body */
+    box-sizing: border-box;
+}
+/* Este bloque de CSS afecta a todos los elementos HTML en la página, indicados por el asterisco "*".  quitando los estilos por defecto del navegador web */
+
+/*  Activa el desplazamiento suave para la página. */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 auto;
+    /* Elimina el margen por defecto del body */
     box-sizing: content-box;
     /* Define el modelo de caja como content-box */
     background: #7F7FD5;  /* fallback for old browsers */
@@ -13,10 +23,16 @@ body {
     /* Fondo con gradiente para navegadores modernos */
     font-family: "Oswald", sans-serif;
     /* Fuente de texto usando la fuente Oswald */
-    color: rgb(34, 219, 74);
+    color: rgb(12, 82, 27);
     /* Color del texto */
 }
 
+a {
+    color: #4a76ee;
+    text-decoration: none;
+}
+
+  
 nav {
     display: flex;
     /* Usa Flexbox para el contenedor de navegación */
@@ -24,13 +40,10 @@ nav {
     /* Alinea los elementos en el centro verticalmente */
     justify-content: space-between;
     /* Distribuye el espacio restante entre los elementos */
-    padding: 50px;
-    /* Espaciado interno de 50 píxeles */
-    height: 80px;
-    /* Altura del contenedor de navegación */
 }
 
 nav .left a {
+/* Las etiquetas se escriben sin <> y las clases llevan punto antes. */
     color: black;
     /* Color del texto de los enlaces a la izquierda */
     font-size: 20px;
@@ -42,6 +55,8 @@ nav .left a {
 nav .right a {
     color: #b91010;
     /* Color del texto de los enlaces a la derecha */
+    font-size: 22px;
+    margin: 0 10px;
 }
 
 nav .right a p {
@@ -51,6 +66,18 @@ nav .right a p {
     /* Tamaño de fuente de 16 píxeles */
 }
 
+nav .right a:last-child {
+    color: #eeeff1;
+    background-color: #1a1c20;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
 .about-me {
     display: flex;
     /* Usa Flexbox para el contenedor de la sección "about-me" */
@@ -58,6 +85,55 @@ nav .right a p {
     /* Distribuye el espacio restante entre los elementos */
     align-items: center;
     /* Alinea los elementos en el centro verticalmente */
+    margin: 50px;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.about-me .text {
+    flex: 5;
+}
+
+.about-me .text h1 {
+    font-size: 45px;
+}
+
+.about-me .text span {
+    font-size: 15px;
+    color: #1a1c20;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.about-me .text .links {
+    margin-top: 30px !important;
+}
+
+.about-me .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #b91010;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.about-me .text .links a:hover {
+    color: #ffffff;
+    border: 4px solid #1a1c20;
+    cursor: pointer;
+    background-color: #1a1c20;
+}
+
+.about-me .text .links span:hover {
+    color: #ffffff;
+}
+
+.about-me .profile {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .about-me .profile img {
@@ -69,4 +145,47 @@ nav .right a p {
     /* Altura de la imagen de 200 píxeles */
     padding: 20px;
     /* Espaciado interno de 20 píxeles alrededor de la imagen */
+}
+
+.habilidades{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.habilidades h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.habilidades .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades .celdas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades .celdas .celda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid #b91010;
+    border-radius: 10px;
+}
+
+.habilidades .celdas .celda img {
+    width: 40px; /* Tamaño inicial del icono */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Se asegura de que no exceda el tamaño del contenedor */
+}
+
+.habilidades .celdas .celda span {
+font-size: 19px;
 }
