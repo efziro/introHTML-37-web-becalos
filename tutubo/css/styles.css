@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #0f0f0f;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+/* Estilos para el contenedor del botón de menú */
+.menu-toggle {
+    display: block; /* Asegura que el botón se muestre */
+    cursor: pointer; /* Indica que el elemento es interactivo */
+    padding: 8px; /* Agrega espacio alrededor del ícono */
+    border: none; /* Elimina el borde por defecto */
+    background: none; /* Elimina el fondo por defecto */
+    position: relative; /* Posicionamiento relativo para pseudo-elementos */
+    width: 22px; /* Ancho del ícono */
+    height: 15px; /* Alto del ícono */
+    margin-left: 18px;
+}
+
+/* Estilos para las líneas del ícono */
+.menu-toggle::before,
+.menu-toggle::after,
+.menu-toggle span {
+    content: ''; /* Contenido vacío para las líneas */
+    display: block; /* Asegura que las líneas se muestren como bloques */
+    width: 100%; /* Ancho del ícono */
+    height: 3px; /* Grosor de las líneas */
+    background-color: #f1f1f1; /* Color de las líneas */
+    position: absolute; /* Posicionamiento absoluto dentro del botón */
+    left: 0; /* Alinea a la izquierda */
+    transition: transform 0.3s ease; /* Transición para la animación */
+}
+
+/* Línea superior */
+.menu-toggle::before {
+    top: 0; /* Alinea la línea en la parte superior */
+}
+
+/* Línea media */
+.menu-toggle span {
+    top: 50%; /* Alinea la línea en el centro */
+    transform: translateY(-50%); /* Centra la línea verticalmente */
+}
+
+/* Línea inferior */
+.menu-toggle::after {
+    bottom: 0; /* Alinea la línea en la parte inferior */
+}
+
+/* Estilos adicionales para el menú */
+#menu {
+    display: none;
+    position: absolute; /* Posición relativa al contenedor */
+    left: 0; /* Ajusta la posición horizontal */
+    top: 50px; /* Ajusta la posición vertical */
+    width: 200px; /* Ajusta el ancho del menú */
+    background-color: #fff; /* Color de fondo del menú */
+}
+
+.logoyt {
+    flex: 1;
+    width: 100%;
+    margin-left: 32px;
+    align-self: header;
+}
+
+.logoyt img {
+    width: 120px; /* Ejemplo de ancho en píxeles */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 auto;
+}
+
+.search-bar {
+    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    overflow: hidden;
+    width: 35%;
+}
+
+.search-bar input {
+    flex: 1;
+    color: #222222;
+    background-color: #0f0f0f;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    padding: 10px;
+    font-size: 110%;
+    padding-left: 20px;
+}
+
+.search-bar .search {
+    padding: 10px 20px;
+    background-color: #222222; /* Color de fondo negro */
+    border: 1px solid #222222; /* Sin borde */
+    border-top-right-radius: 30px; /* Bordes redondeados en la parte superior derecha */
+    border-bottom-right-radius: 30px; /* Bordes redondeados en la parte inferior derecha */
+    padding: 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cursor de puntero para indicar que es clicable */
+}
+
+.search-bar .search i {
+    color: #f1f1f1; /* Color del icono de la lupa */
+    padding-right: 15px;
+    padding-left: 12px;
+    font-size: 150%;
+}
+
+.search-bar .micro {
+    background-color: #222222; /* Color de fondo del botón */
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    padding: 10px;
+    margin-left: 15px; /* Espacio entre el botón de búsqueda y este botón */
+    cursor: pointer;
+    width: 43px;
+}
+
+.search-bar .micro i {
+    color: #f1f1f1; /* Color del icono */
+    font-size: 18px; /* Tamaño del icono */
+}
+
+.search-bar .micro:hover {
+    background-color: #5f5f5f;
+}
+
+/*código directo de youtube*/
+#end.ytd-masthead {
+    min-width: 225px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+  }
+
+#buttons.ytd-masthead {
+    display: flexbox;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: row;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#buttons.ytd-masthead .ytd-masthead[is-icon-button] {
+    color: var(--yt-spec-icon-active-other);
+    outline: none;
+}
+
+#button.ytd-topbar-menu-button-renderer {
+    color: var(--yt-button-color,inherit);
+    background-color: transparent;
+    text-transform: var(--yt-button-text-transform,inherit);
+}
