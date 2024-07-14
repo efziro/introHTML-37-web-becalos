@@ -11,7 +11,8 @@ html {
   }
 
 body {
-    margin: 0 auto;
+    max-width: 1400px;
+        margin: 0 auto;
     /* Elimina el margen por defecto del body */
     box-sizing: content-box;
     /* Define el modelo de caja como content-box */
@@ -23,7 +24,7 @@ body {
     /* Fondo con gradiente para navegadores modernos */
     font-family: "Oswald", sans-serif;
     /* Fuente de texto usando la fuente Oswald */
-    color: rgb(12, 82, 27);
+    color: rgb(1, 14, 87);
     /* Color del texto */
 }
 
@@ -40,22 +41,40 @@ nav {
     /* Alinea los elementos en el centro verticalmente */
     justify-content: space-between;
     /* Distribuye el espacio restante entre los elementos */
+    background-color: #252525;
+}
+
+nav .left,
+nav .right {
+    margin-bottom: 20px;
+}
+
+nav .left {
+    margin-left: 50px;
 }
 
 nav .left a {
 /* Las etiquetas se escriben sin <> y las clases llevan punto antes. */
-    color: black;
+    color: rgb(0, 0, 0);
     /* Color del texto de los enlaces a la izquierda */
-    font-size: 20px;
+    font-size: 50px;
     /* Tamaño de fuente de 20 píxeles */
     font-weight: 600;
     /* Grosor de fuente */
+    margin-left: 0px;
+    font-family: "Playwrite DK Uloopet", cursive;
+    transform: rotate(-10deg) scaleX(0.8) skew(-15deg); /* Rotación de 45 grados */
+    display: inline-block; /* Para que la rotación se aplique correctamente */
+}
+
+nav .right {
+    margin-right: 20px;
 }
 
 nav .right a {
-    color: #b91010;
+    color: #4a76ee;
     /* Color del texto de los enlaces a la derecha */
-    font-size: 22px;
+    font-size: 25px;
     margin: 0 10px;
 }
 
@@ -67,9 +86,9 @@ nav .right a p {
 }
 
 nav .right a:last-child {
-    color: #eeeff1;
-    background-color: #1a1c20;
-    padding: 5px 15px;
+    color: #1a1c20;
+    background-color: #b6b7b8;
+    padding: 0px 15px;
     border-radius: 5px;
 }
 
@@ -100,23 +119,25 @@ nav .right a span {
 
 .about-me .text span {
     font-size: 15px;
-    color: #1a1c20;
+    color: #151b25;
     margin-top: 10px;
     font-weight: 500;
 }
 
 .about-me .text .links {
-    margin-top: 30px !important;
+    margin-top: 35px;
+    margin-left: 100px;
 }
 
 .about-me .text .links a {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #b91010;
+    border: 2px solid rgb(1, 14, 87);
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
-    transition: .1s;
+    font-size: 25px;
+    text-align: center;
 }
 .about-me .text .links a:hover {
     color: #ffffff;
@@ -139,26 +160,32 @@ nav .right a span {
 .about-me .profile img {
     border-radius: 50%;
     /* Hace que la imagen tenga bordes redondeados para parecer un círculo */
-    width: 200px;
+    width: 400px;
     /* Ancho de la imagen de 200 píxeles */
-    height: 200px;
+    height: 400px;
     /* Altura de la imagen de 200 píxeles */
-    padding: 20px;
+    padding: 50px;
     /* Espaciado interno de 20 píxeles alrededor de la imagen */
 }
 
 .habilidades{
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    background-color: #151b25;
+    padding-top: 25px;
+    padding-bottom: 100px;
 }
 .habilidades h2 {
     text-align: center;
     font-size: 40px;
+    color: #dddddd;
+    margin-bottom: 20px;
 }
 
 .habilidades .text {
     text-align: center;
     margin-bottom: 20px;
+    color: #dddddd;
 }
 
 .habilidades .celdas {
@@ -176,8 +203,6 @@ nav .right a span {
     width: 200px;
     padding: 10px 20px;
     margin-top: 10px;
-    border: 2px solid #b91010;
-    border-radius: 10px;
 }
 
 .habilidades .celdas .celda img {
@@ -188,4 +213,5 @@ nav .right a span {
 
 .habilidades .celdas .celda span {
 font-size: 19px;
+color: #dddddd;
 }
