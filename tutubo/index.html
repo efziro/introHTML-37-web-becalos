@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antloz">
+    <meta name="description" content="Project for Devf about a clon of YouTube's home page">
+    <meta name="keywords" content="youtube, videos, social network">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Youtube (clon)</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+        <!-- Botón de menú hamburguesa: -->
+        <button id="menu-toggle" class="menu-toggle">
+            <!-- Icono de menú hamburguesa -->
+            <span class="menu-toggle-icon"></span>
+        </button>
+
+        <div class="logoyt">
+            <img src="recursos/logoyt.png" alt="Logo YouTube">
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button class="search" type="submit">
+                <i class="fa fa-search"></i> <!-- Asegúrate de tener Font Awesome o el icono correspondiente -->
+            </button>
+
+            <button class="micro">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <!--código directo de youtube-->
+        <div id="end" class="style-scope ytd-masthead">
+            <div id="masthead-skeleton-icons" slot="masthead-skeleton"><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div></div>
+            <div id="buttons" class="style-scope ytd-masthead"><ytd-topbar-menu-button-renderer class="style-scope ytd-masthead style-default" use-keyboard-focused="" is-icon-button="" has-no-text=""><!--css-build:shady--><!--css-build:shady--><dom-if class="style-scope ytd-topbar-menu-button-renderer"><template is="dom-if"></template></dom-if>
+        <div id="button" class="style-scope ytd-topbar-menu-button-renderer"><a class="yt-simple-endpoint style-scope ytd-topbar-menu-button-renderer" tabindex="-1"><yt-icon-button id="button" class="style-scope ytd-topbar-menu-button-renderer style-default" role="button"><!--css-build:shady--><!--css-build:shady--><button id="button" class="style-scope yt-icon-button" aria-label="Crear"><yt-icon class="style-scope ytd-topbar-menu-button-renderer"><!--css-build:shady--><!--css-build:shady--><yt-icon-shape class="style-scope yt-icon"><icon-shape class="yt-spec-icon-shape"><div style="width: 100%; height: 100%; display: block; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg></div></icon-shape></yt-icon-shape></yt-icon></button><yt-interaction id="interaction" class="circular style-scope yt-icon-button"><!--css-build:shady--><!--css-build:shady--><div class="stroke style-scope yt-interaction"></div><div class="fill style-scope yt-interaction"></div></yt-interaction></yt-icon-button><tp-yt-paper-tooltip class="style-scope ytd-topbar-menu-button-renderer" role="tooltip" tabindex="-1" style="inset: 56px auto auto 1324.02px;"><!--css-build:shady--><div id="tooltip" class="style-scope tp-yt-paper-tooltip hidden" style-target="tooltip">
+          Crear
+        </div>
+        </tp-yt-paper-tooltip></a></div>
+        </ytd-topbar-menu-button-renderer><ytd-notification-topbar-button-renderer class="style-scope ytd-masthead"><!--css-build:shady--><!--css-build:shady--><yt-icon-button id="icon" class="style-scope ytd-notification-topbar-button-renderer" role="button"><!--css-build:shady--><!--css-build:shady--><button id="button" class="style-scope yt-icon-button" aria-label="Notificaciones">
+          <yt-icon-badge-shape><div class="yt-spec-icon-badge-shape yt-spec-icon-badge-shape--type-notification yt-spec-icon-badge-shape--style-overlay"><div class="yt-spec-icon-badge-shape__icon"><yt-icon style=""><!--css-build:shady--><!--css-build:shady--><yt-icon-shape class="style-scope yt-icon"><icon-shape class="yt-spec-icon-shape"><div style="width: 100%; height: 100%; display: block; fill: currentcolor;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg></div></icon-shape></yt-icon-shape></yt-icon></div></div></yt-icon-badge-shape>
+        </button><yt-interaction id="interaction" class="circular style-scope yt-icon-button"><!--css-build:shady--><!--css-build:shady--><div class="stroke style-scope yt-interaction"></div><div class="fill style-scope yt-interaction"></div></yt-interaction></yt-icon-button>
+        <tp-yt-paper-tooltip class="style-scope ytd-notification-topbar-button-renderer" role="tooltip" tabindex="-1" style="left: 1347.93px; top: 62px;"><!--css-build:shady--><div id="tooltip" class="style-scope tp-yt-paper-tooltip hidden" style-target="tooltip">
+          Notificaciones
+        </div>
+        </tp-yt-paper-tooltip>
+        </ytd-notification-topbar-button-renderer><ytd-topbar-menu-button-renderer class="style-scope ytd-masthead" use-keyboard-focused=""><!--css-build:shady--><!--css-build:shady-->
+          <button id="avatar-btn" aria-haspopup="true" class="style-scope ytd-topbar-menu-button-renderer" aria-label="Menú de la cuenta">
+            <yt-img-shadow height="32" width="32" class="style-scope ytd-topbar-menu-button-renderer no-transition" style="background-color: transparent;" loaded=""><!--css-build:shady--><!--css-build:shady--><img id="img" draggable="false" class="style-scope yt-img-shadow" alt="Imagen de avatar" height="32" width="32" src="https://yt3.ggpht.com/yti/ANjgQV9MjsOeV8bx2ik6ZDi0hIVdNGd19WSFAoLUmwFkMGGfGe0=s88-c-k-c0x00ffffff-no-rj"></yt-img-shadow>
+          </button>
+        <dom-if class="style-scope ytd-topbar-menu-button-renderer"><template is="dom-if"></template></dom-if>
+        <div id="button" class="style-scope ytd-topbar-menu-button-renderer"></div>
+        </ytd-topbar-menu-button-renderer></div>
+          </div>
+    </header> 
+</body>
+</html>
