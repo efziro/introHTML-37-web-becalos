@@ -55,7 +55,7 @@ nav .left {
 
 nav .left a {
 /* Las etiquetas se escriben sin <> y las clases llevan punto antes. */
-    color: rgb(0, 0, 0);
+    color: #4a76ee;
     /* Color del texto de los enlaces a la izquierda */
     font-size: 50px;
     /* Tamaño de fuente de 20 píxeles */
