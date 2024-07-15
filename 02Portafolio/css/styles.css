@@ -41,7 +41,7 @@ nav {
     /* Alinea los elementos en el centro verticalmente */
     justify-content: space-between;
     /* Distribuye el espacio restante entre los elementos */
-    background-color: #252525;
+    background-color: #151b25;
 }
 
 nav .left,
