@@ -2,14 +2,87 @@ html {
     scroll-behavior: smooth;
   }
 
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 body {
     background-color: #0f0f0f;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
     display: flex;
     align-items: center;
-    padding-top: 16px;
+    padding-top: 0px;
 }
 
 /* Estilos para el contenedor del botón de menú */
@@ -20,8 +93,8 @@ header {
     border: none; /* Elimina el borde por defecto */
     background: none; /* Elimina el fondo por defecto */
     position: relative; /* Posicionamiento relativo para pseudo-elementos */
-    width: 22px; /* Ancho del ícono */
-    height: 15px; /* Alto del ícono */
+    width: 18px; /* Ancho del ícono */
+    height: auto; /* Alto del ícono */
     margin-left: 18px;
 }
 
@@ -32,7 +105,7 @@ header {
     content: ''; /* Contenido vacío para las líneas */
     display: block; /* Asegura que las líneas se muestren como bloques */
     width: 100%; /* Ancho del ícono */
-    height: 3px; /* Grosor de las líneas */
+    height: 2px; /* Grosor de las líneas */
     background-color: #f1f1f1; /* Color de las líneas */
     position: absolute; /* Posicionamiento absoluto dentro del botón */
     left: 0; /* Alinea a la izquierda */
@@ -61,7 +134,7 @@ header {
     position: absolute; /* Posición relativa al contenedor */
     left: 0; /* Ajusta la posición horizontal */
     top: 50px; /* Ajusta la posición vertical */
-    width: 200px; /* Ajusta el ancho del menú */
+    width: 200; /* Ajusta el ancho del menú */
     background-color: #fff; /* Color de fondo del menú */
 }
 
@@ -139,33 +212,110 @@ header {
     background-color: #5f5f5f;
 }
 
-/*código directo de youtube*/
-#end.ytd-masthead {
-    min-width: 225px;
-    -moz-box-align: center;
-    align-items: center;
-    -moz-box-pack: end;
-    justify-content: flex-end;
-  }
-
-#buttons.ytd-masthead {
-    display: flexbox;
-    display: -moz-box;
+/* Botones en .right-b */
+.right-b {
     display: flex;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    flex-direction: row;
-    -moz-box-align: center;
+    justify-content: flex-end;
+    align-items: center; /* Asegura que todos los botones estén centrados verticalmente */
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.right-b button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    width: 45px; /* Ancho del botón */
+    height: 45px; /* Altura del botón para asegurarse de que sea cuadrado */
+    display: flex; /* Asegura que el contenido del botón esté centrado */
+    justify-content: center;
     align-items: center;
 }
 
-#buttons.ytd-masthead .ytd-masthead[is-icon-button] {
-    color: var(--yt-spec-icon-active-other);
-    outline: none;
+.right-b button img {
+    width: 24px; /* Ajusta el tamaño del icono */
+    height: 24px; /* Asegura que la altura sea igual al ancho */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
 }
 
-#button.ytd-topbar-menu-button-renderer {
-    color: var(--yt-button-color,inherit);
-    background-color: transparent;
-    text-transform: var(--yt-button-text-transform,inherit);
+.right-b button:hover {
+    background-color: #5f5f5f; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Ajustes específicos para el botón .perfilf */
+.right-b .perfilf {
+    width: 45px; /* Ancho del botón para que se ajuste al tamaño más grande de la imagen */
+    height: 45px; /* Altura del botón */
+}
+
+.right-b .perfilf img {
+    width: 40px; /* Tamaño de la imagen */
+    height: 40px; /* Asegura que la altura sea igual al ancho */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+}
+
+.sidebar {
+    display: flex;
+    justify-content: left;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.sidebar nav ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.sidebar img {
+    width: 20px; /* Establece el ancho deseado para todas las imágenes */
+    height: auto; /* Establece la altura deseada para todas las imágenes */
+    margin-right: 0px; /* Espacio entre la imagen y el texto */
+    object-fit: contain;
+}
+
+.sidebar a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #fff; /* Color del texto */
+    font-size: 10px; /* Tamaño del texto */
+    line-height: 25px;
+}
+
+.tags {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 60px; /* Ajusta la posición vertical según sea necesario */
+    background-color: transparent; /* Fondo transparente */
+    left: 90px;
+}
+
+.tag-list {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.tags .tag-list .tag {
+    background-color: #222222;
+    color: #f1f1f1;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tags .tag-list .tag:hover {
+    background-color: #5f5f5f;
 }
