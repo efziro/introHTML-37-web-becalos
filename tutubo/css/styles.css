@@ -319,3 +319,62 @@ header {
 .tags .tag-list .tag:hover {
     background-color: #5f5f5f;
 }
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.videos .video-card {
+    background-color: transparent;
+    width: 22%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.thumbnail img {
+    width: 100%;
+    border-bottom: 1px solid #383838;
+}
+
+.video-info {
+    display: flex;
+    padding: 10px;
+}
+
+.profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-details a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.video-details .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.video-details .author {
+    font-size: 12px;
+    color: #909090;
+}
+
+.video-details .views, .video-details .time {
+    font-size: 12px;
+    color: #606060;
+}
