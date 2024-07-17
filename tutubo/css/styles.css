@@ -353,28 +353,80 @@ header {
     margin-right: 10px;
 }
 
-.video-details {
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    margin-top: 50px;
+    }
+
+.videos .grid {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     flex-direction: column;
 }
-
-.video-details a {
-    text-decoration: none;
-    color: #f1f1f1;
+.videos .grid .thumbnail {
+    width: 400px;
+    height: auto;
 }
 
-.video-details .title {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.videos .grid .vinfo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
-.video-details .author {
-    font-size: 12px;
-    color: #909090;
+.videos .grid .vinfo img {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
 }
 
-.video-details .views, .video-details .time {
-    font-size: 12px;
-    color: #606060;
+.videos .grid .vtexto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: 0px;
 }
+
+.videos .grid .vtexto .titulo {
+    font-size: 20px;
+}
+
+.videos .grid .vtexto .vtexto2 a {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    color: #a0a0a0;
+}
+
+/* CSS anterior a grid
+    .video-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-details a {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+    
+    .video-details .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .video-details .author {
+        font-size: 12px;
+        color: #909090;
+    }
+    
+    .video-details .views, .video-details .time {
+        font-size: 12px;
+        color: #606060;
+    }
+*/
